@@ -131,4 +131,8 @@ az container create --resource-group myRG --name mycontainerinstance --image myw
 
 ![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/30df0435-831f-49ba-9901-ad6e6f04824f)
 
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/e94d42ca-e41e-44f8-a115-b5ddbae7ba54)
 
+Navigat to the API endpoint URL: http://mywebapidns.westeurope.azurecontainer.io/weatherforecast
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/c15ee849-15f8-47d3-ae5a-e723b7afa770)
