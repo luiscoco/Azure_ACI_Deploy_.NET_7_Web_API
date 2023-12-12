@@ -1,4 +1,4 @@
-# How to create a Docker image from a .NET 7 Web API and how to upload it to Azure Container Registry (ACR)
+# How to deploy a .NET 7 Web API in Azure Container Instance
 
 ## 1. Create an Azure Container Registry
 
