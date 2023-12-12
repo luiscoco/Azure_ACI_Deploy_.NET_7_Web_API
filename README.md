@@ -14,23 +14,13 @@ We create a Container Registry service
 
 ![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/30b1e0a2-ccea-4ef6-98ec-c93e3a69d0e3)
 
-## 2. Create a .NET 8 Web API 
+## 2. Create a .NET 8 Web API in Visual Studio 2022 Community Edition
 
-Open VSCode and in a Terminal window for creating a new Web API without HTTPS type this command:
+Open Visual Studio 2022 Community Edition and we create a new .NET 7 API 
 
-```
-dotnet new webapi --no-https --framework net8.0
-```
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/c0aed5a6-25b0-4c4f-9b8b-d7cf1f53761a)
 
-![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/a64a9e9b-a983-423c-b420-52e15859a0c1)
-
-We verify the application with the command
-
-```
-dotnet run
-```
-
-![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/de2f16e5-1de4-44a3-a040-d4d08aa84284)
+We build and run the application to verify it
 
 We navigate to the Web API URL contoller endpoint:
 
@@ -82,6 +72,8 @@ az acr login --name mywebapicontainer
 
 ![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/9ce65286-9e73-4e21-879a-68ad6f607bb2)
 
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/6e4b5967-bbd2-4c31-903f-917b1b70025a)
+
 Install the **Docker** extension in VSCode
 
 ![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/6c9243c9-9b8e-4b28-9ce6-ba5ba3286449)
@@ -93,29 +85,7 @@ Press Ctrl+Shift+P and type "**Add Docker Files to Workspace**"
 Enter the **dockerfile** source code
 
 ```dockerfile
-#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /app
-EXPOSE 80
-
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
-WORKDIR /src
-COPY ["Azure .NET 8 API.csproj", "."]
-RUN dotnet restore "./././Azure .NET 8 API.csproj"
-COPY . .
-WORKDIR "/src/."
-RUN dotnet build "./Azure .NET 8 API.csproj" -c $BUILD_CONFIGURATION -o /app/build
-
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Azure .NET 8 API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
-
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Azure .NET 8 API.dll"]
 ```
 
 ## 4. 
