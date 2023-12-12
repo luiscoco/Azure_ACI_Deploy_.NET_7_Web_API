@@ -1,4 +1,4 @@
-# How to create a Docker image from a .NET 8 Web API and how to upload it to Azure Container Registry (ACR)
+# How to create a Docker image from a .NET 7 Web API and how to upload it to Azure Container Registry (ACR)
 
 ## 1. Create an Azure Container Registry
 
@@ -14,7 +14,7 @@ We create a Container Registry service
 
 ![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/30b1e0a2-ccea-4ef6-98ec-c93e3a69d0e3)
 
-## 2. Create a .NET 8 Web API in Visual Studio 2022 Community Edition
+## 2. Create a .NET 7 Web API in Visual Studio 2022 Community Edition
 
 Open Visual Studio 2022 Community Edition and we create a new .NET 7 API 
 
