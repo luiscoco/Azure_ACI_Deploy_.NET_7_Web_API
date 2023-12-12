@@ -109,7 +109,17 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebAPI.dll"]
 ```
 
-## 4. 
+## 4. We build the Docker Image
+
+```
+docker build -t mywebapicontainer.azurecr.io/mywebapicontainer:v1 .
+```
+
+## 5. We puch the Docker image to the Azure ACR
+
+```
+docker push mywebapicontainer.azurecr.io/mywebapicontainer:v1
+```
 
 
 
