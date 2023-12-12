@@ -58,6 +58,40 @@ If we want to reset the docker configuration, go to this path and delete the con
 
 ![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/d263f28f-6cb5-49e7-aff7-8a94919b1a03)
 
+Now we login in Azure CLI
+
+```
+az login
+```
+
+We go to the Azure Portal and we activate the admin user
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/40c6defd-2b5a-4c43-a036-8130657c92f7)
+
+or we can activate the admin user with this command:
+
+```
+az acr update --name mywebapicontainer --resource-group myRG --admin-enabled true
+```
+
+Then we login in the Azure ACR and set the username and password in the admin user page
+
+```
+az acr login --name mywebapicontainer
+```
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/9ce65286-9e73-4e21-879a-68ad6f607bb2)
+
+Install the **Docker** extension in VSCode
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/6c9243c9-9b8e-4b28-9ce6-ba5ba3286449)
+
+Press Ctrl+Shift+P and type "**Add Docker Files to Workspace**"
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/25f1dcfd-631b-497a-bad7-5bfb416a33d4)
+
+
+
 ## 4. 
 
 
