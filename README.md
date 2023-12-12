@@ -30,10 +30,33 @@ We verify the application with the command
 dotnet run
 ```
 
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/de2f16e5-1de4-44a3-a040-d4d08aa84284)
+
+We navigate to the Web API URL contoller endpoint:
+
+http://localhost:5026/weatherforecast
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/da91ee93-78ca-4858-8a9a-9039e93d25d7)
+
+And also we visit the swagger API doc webpage:
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/3b0587a0-02bd-44ca-926c-81a1077cdbee)
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/7f2cd3b9-edaf-4435-9345-3895b4d9d9a2)
 
 ## 3. Create the docker image and we push in Azure ACR
 
+**IMPORTANT**! We first have to run **Docker Desktop**
 
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/8dfb1f93-83e3-4595-b95c-92cbe9ddaa9b)
+
+Then we login in docker 
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/ee3d392f-5dbb-4382-a9b7-f462f15928c5)
+
+If we want to reset the docker configuration, go to this path and delete the config.json file and then run the above command **docker login**
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/d263f28f-6cb5-49e7-aff7-8a94919b1a03)
 
 ## 4. 
 
