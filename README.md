@@ -14,10 +14,21 @@ We create a Container Registry service
 
 ![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/30b1e0a2-ccea-4ef6-98ec-c93e3a69d0e3)
 
-
-
 ## 2. Create a .NET 8 Web API 
 
+Open VSCode and in a Terminal window for creating a new Web API without HTTPS type this command:
+
+```
+dotnet new webapi --no-https --framework net8.0
+```
+
+![image](https://github.com/luiscoco/Azure_ACR_Upload_.NET_8_Web_API/assets/32194879/a64a9e9b-a983-423c-b420-52e15859a0c1)
+
+We verify the application with the command
+
+```
+dotnet run
+```
 
 
 ## 3. Create the docker image and we push in Azure ACR
